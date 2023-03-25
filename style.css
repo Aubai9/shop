@@ -1,0 +1,173 @@
+/* the main div */
+.container {
+    height: 100vh;
+    background-color: #3fb0f1;
+    position: relative;
+}
+/* this div has the title and creator */
+.cont {
+    width: 180px;
+    height: 150px;
+    position: relative;
+    left: 10%;
+}
+.title {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-weight: 900;
+    letter-spacing: 1px;
+}
+.title::first-letter {
+    font-size: 55px;
+    padding: 5px;
+}
+.para {
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    top: 45%;
+    left: 28%;
+}
+/* this is new-div has arcticle */
+.new-cont {
+    width: 50%;
+    height: 200px;
+    position: relative;
+    left: 12%;
+}
+.article-title {
+    font-weight: 900;
+}
+.new-para {
+    font-size: 16px;
+    font-weight: 500;
+}
+/* this is button div */
+.btn-cont {
+    width: 50%;
+    height: 100px;
+    position: relative;
+    top: 10%;
+    left: 12%;
+}
+.feat1 {
+    font-size: 16px;
+    font-weight: 500;
+}
+.feat2 {
+    font-size: 16px;
+    font-weight: 900;
+}
+.feat3 {
+    margin-left: 45px;
+    margin-bottom: 10px;
+    font-size: 25px;
+}
+.last-cont {
+    position: relative;
+    top: 10%;
+    left: 12%;
+    width: 40%;
+}
+.pic {
+    width: 40px;
+    cursor: pointer;
+    margin-left: 20px;
+}
+.pic:hover {
+    transform: translate3d( 5px ,-5px ,-5px);
+    transition: 0.4s;
+}
+/* part two of the project */
+.new-start {
+    width: 30%;
+    height: 85%;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    border: 13px solid white;
+    border-radius: 20px;
+    background-color: rgb(218, 218, 218);
+}
+.island {
+    width: 48%;
+    height: 7%;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+}
+.feat4 {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: #333;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 10px;
+}
+.circle {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #333;
+    position: absolute;
+    top: 45%;
+    left: 77%;
+    transform: translate(-50%);
+}
+.pic-p1 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border: 13px solid #3fb0f1;
+    border-radius: 5px;
+}
+.pic-p2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    border: 13px solid rgb(2, 250, 106);
+    border-radius: 5px;
+    border-top: 0;
+}
+/* start responsive */
+@media (max-width: 991px) {
+    .btn-cont {
+        top: 73px;
+    }
+}
+@media (max-width: 509px) {
+    .container {
+        height: 120vh;
+    }
+    #btn1 {
+        width: 32%;
+    }
+    #btn2 {
+        width: 32%;
+    }
+    .btn-cont {
+        top: 150px;
+    }
+    .btn-cont {
+        left: 50%;
+        transform: translate(-50%);
+    }
+    .new-start {
+        height: 400px;
+    }
+    .last-cont {
+        width: 50%;
+        top: 28%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
